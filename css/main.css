@@ -1,0 +1,79 @@
+body {
+    background-color: #808080;
+}
+
+header {
+    background-color: white;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    color: black;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+
+}
+
+
+
+h1 {
+    font-size: 36pt;
+}
+
+h3 {
+    font-size: 20pt;
+}
+
+p {
+    font-size: 10pt;
+}
+
+main{
+    background-color: #FFFFFF;
+    border-radius: 10px;
+}
+
+aside{
+    background-color: #FFFFFF;
+    border-radius: 10px;
+}
+
+footer{
+    background-color: black;
+    border-radius: 10px;
+}
+
+footer p{
+    color: white;
+}
+
+
+
+nav li{
+    border: 2px solid white;
+    background-color: #339936;
+    list-style-type: none;
+}
+
+nav li a{
+    color: white;
+    text-decoration: none;
+}
+
+Nav li:hover{
+    background-color: #023020;
+}
+
+.active{
+    background-color: black;
+}
+
+
+
+table{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
