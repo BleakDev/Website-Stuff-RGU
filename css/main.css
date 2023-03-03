@@ -1,9 +1,28 @@
+.youtube-container {
+    overflow: hidden;
+    width: 100%;
+    /* Keep it the right aspect-ratio */
+    aspect-ratio: 16/9;
+    /* No clicking/hover effects */
+    pointer-events: none;
+} 
+
+.youtube-container iframe {
+    /* Extend it beyond the viewport... */
+    width: 300%;
+    height: 100%;
+    /* ...and bring it back again */
+    margin-left: -100%;
+}
+
+
 body {
     background-color: #808080;
 }
 
 header {
     background-color: white;
+    padding: 10px;
 }
 
 h1,
@@ -17,10 +36,17 @@ p {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
 }
 
-
+#headerImage {
+    height: 50px;
+    width: 50px;
+    float: left;
+    margin-right: 10px;
+}
 
 h1 {
     font-size: 36pt;
+    margin:0;
+    display: inline;
 }
 
 h3 {
@@ -37,13 +63,16 @@ main {
 }
 
 aside {
-    background-color: #FFFFFF;
+    background-color: #ffffff50;
     border-radius: 10px;
+    float: right;
+    width: 25%;
 }
 
 footer {
     background-color: black;
     border-radius: 10px;
+    clear: both;
 }
 
 footer p {
@@ -54,8 +83,12 @@ footer p {
 
 nav li {
     border: 2px solid white;
-    background-color: #339936;
+    background-color: #37a572;
     list-style-type: none;
+    float: left;
+    width: 15%;
+    padding: 16px;
+    margin-bottom: 10px;
 }
 
 nav li a {
@@ -64,7 +97,7 @@ nav li a {
 }
 
 Nav li:hover {
-    background-color: #023020;
+    background-color: #000000;
 }
 
 .active {
@@ -72,6 +105,19 @@ Nav li:hover {
 }
 
 
+main {
+    width: 70%;
+    float: left;
+  }
+
+  
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
 
 table {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -94,4 +140,10 @@ Table tr:hover {
 Table th {
     background-color: #339936;
     color: white
+}
+
+Nav ul {
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
 }
