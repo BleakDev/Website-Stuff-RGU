@@ -1,6 +1,6 @@
 .youtube-container {
     overflow: hidden;
-    width: 100%;
+    width: 100% !important;
     /* Keep it the right aspect-ratio */
     aspect-ratio: 16/9;
     /* No clicking/hover effects */
@@ -9,19 +9,19 @@
 
 .youtube-container iframe {
     /* Extend it beyond the viewport... */
-    width: 300%;
-    height: 100%;
+    width: 300% !important;
+    height: 100% !important;
     /* ...and bring it back again */
     margin-left: -100%;
 }
 
 
 body {
-    background-color: #808080;
+    background-color: #808080 !important;
 }
 
 header {
-    background-color: white;
+    background-color: white !important;
     padding: 10px;
 }
 
@@ -63,27 +63,26 @@ main {
 }
 
 aside {
-    background-color: #ffffff50;
+    background-color: #ffffff50 !important;
     border-radius: 10px;
     float: right;
     width: 25%;
 }
 
 footer {
-    background-color: black;
-    border-radius: 10px;
+    background-color: black !important;
+    /* border-radius: 10px; */
     clear: both;
+    margin-top: 10px;
 }
 
 footer p {
     color: white;
 }
 
-
-
 nav li {
     border: 2px solid white;
-    background-color: #37a572;
+    background-color: #37a572 !important;
     list-style-type: none;
     float: left;
     width: 15%;
@@ -97,11 +96,11 @@ nav li a {
 }
 
 Nav li:hover {
-    background-color: #000000;
+    background-color: #000000 !important;
 }
 
 .active {
-    background-color: black;
+    background-color: black !important;
 }
 
 
@@ -130,7 +129,7 @@ table th {
 }
 
 Table tr:nth-child(even) {
-    background-color: #F2F2F2;
+    background-color: #F2F2F2 !important;
 }
 
 Table tr:hover {
@@ -138,7 +137,7 @@ Table tr:hover {
 }
 
 Table th {
-    background-color: #339936;
+    background-color: #339936 !important;
     color: white
 }
 
@@ -146,4 +145,13 @@ Nav ul {
     margin: 0px;
     padding: 0px;
     overflow: hidden;
+}
+
+.carouselTagImage {
+    width: 200px;
+    height: 200px
+}
+
+.pCarousel {
+   color: white; 
 }
