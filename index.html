@@ -1,123 +1,158 @@
 <html>
 
 <head>
-    <title>Silly Cats Society</title>
-    <link rel='stylesheet' href='css/main.css'>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  <title>Silly Cats Society</title>
+  <link rel='stylesheet' href='css/main.css'>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
 
-</head>
+
+
+  <script>
+    var counter = 2;
+    function login() {
+      if (counter % 2 == 0) {
+        alert('You have been logged in!');
+      }
+      else {
+        alert('You have been logged out!')
+      }
+      counter += 1;
+    }
+
+
+
+    
+  </script>
+  
+  </head>
 
 
 <body>
-    <header>
+  <header>
 
+    <form>
+      <fieldset>
+
+        <input type="text" name="name" value="email" />
+        <input type="text" name="name" value="password" />
+        <button type="button" onclick=login()>Login</button> <br />
 
 
         <h1>Silly Cats Society</h1>
         <img src="images/sillycatlogo.png" id="headerImage" alt="Silly cat sticking tongue out with RGU logo">
 
 
+      </fieldset>
+    </form>
 
 
-    </header>
+  </header>
 
-    <nav>
+  <nav>
 
-        <ul>
-            <li class=”active”><a href=index.html>Home</a></li>
-            <li class=”active”><a href=img_gallery.html>Gallery</a></li>
-            <li class=”active”><a href=current_members.html>Current Members</a></li>
-            <li class=”active”><a href=event_calendar.html>Events</a></li>
-            <li class=”active”><a href=contact_us.html>Contact Us</a></li>
-        </ul>
-
-
-    </nav>
-
-    <main>
+    <ul>
+      <li class=”active”><a href=index.html>Home</a></li>
+      <li class=”active”><a href=img_gallery.html>Gallery</a></li>
+      <li class=”active”><a href=current_members.html>Current Members</a></li>
+      <li class=”active”><a href=event_calendar.html>Events</a></li>
+      <li class=”active”><a href=contact_us.html>Contact Us</a></li>
+    </ul>
 
 
+  </nav>
 
-
-        <div>
-
-            <h3>Welcome to the silly cats society!</h3>
-
-            <p>The silly cats society is RGU's unofficial silly cat posting society, here we partake in the most
-                important acts of analysing silly cat memes. We believe that the silliness of cats is what makes them so
-                special and unique. We post and discuss the latest and greatest silly cat memes on a weekly basis.</p>
-
-            <div class="youtube-container">
-                <iframe width="560" height="315"
-                    src="https://www.youtube.com/embed/mwLz2AHljv4?autoplay=1&mute=1&loop=1&color=white&controls=0&playlist=mwLz2AHljv4"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen></iframe>
-            </div>
-        </div>
+  <main>
 
 
 
-        <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active" data-bs-interval="10000">
-                <img src="images/sillycat1.png" class="d-block w-100 carouselTagImage" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>WLEEE SO SILLY</h5>
-                  <p class="pCarousel">this silly boy is sticking his little tongue out!</p>
-                </div>
-              </div>
-              <div class="carousel-item" data-bs-interval="2000">
-                <img src="images/sillycat2.png" class="d-block w-100 carouselTagImage" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>OMG THE SHOCKER</h5>
-                  <p class="pCarousel">he is shocked i wonder what he is shocked about.</p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img src="images/sillycat3.png" class="d-block w-100 carouselTagImage" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>WAGOOGUS JR</h5>
-                  <p class="pCarousel">he just a itty bitty lil boi.</p>
-                </div>
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
+
+    <div>
+
+      <h3>Welcome to the silly cats society!</h3>
+
+      <p>The silly cats society is RGU's unofficial silly cat posting society, here we partake in the most
+        important acts of analysing silly cat memes. We believe that the silliness of cats is what makes them so
+        special and unique. We post and discuss the latest and greatest silly cat memes on a weekly basis.</p>
+
+      <div class="youtube-container">
+        <iframe width="560" height="315"
+          src="https://www.youtube.com/embed/mwLz2AHljv4?autoplay=1&mute=1&loop=1&color=white&controls=0&playlist=mwLz2AHljv4"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+      </div>
+    </div>
+
+
+
+    <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="10000">
+          <img src="images/sillycat1.png" class="d-block w-100 carouselTagImage" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>WLEEE SO SILLY</h5>
+            <p class="pCarousel">this silly boy is sticking his little tongue out!</p>
           </div>
-
-    </main>
-
-    <aside>
-
-        <div class="row">
-            <div class="column" style="background-color:#aaa;">
-                <a class="twitter-timeline" data-height="800"
-                    href="https://twitter.com/starwars?ref_src=twsrc%5Etfw">Tweets by starwars</a>
-                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-            </div>
         </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="images/sillycat2.png" class="d-block w-100 carouselTagImage" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>OMG THE SHOCKER</h5>
+            <p class="pCarousel">he is shocked i wonder what he is shocked about.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/sillycat3.png" class="d-block w-100 carouselTagImage" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>WAGOOGUS JR</h5>
+            <p class="pCarousel">he just a itty bitty lil boi.</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
 
-    </aside>
+  </main>
 
-    <footer>
+  <aside>
 
-        <p> © Tom Barnicoat </p>
+    <div class="row">
+      <div class="column" style="background-color:#aaa;">
+        <a class="twitter-timeline" data-height="800" href="https://twitter.com/starwars?ref_src=twsrc%5Etfw">Tweets by
+          starwars</a>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-    </footer>
+      </div>
+    </div>
+
+  </aside>
+
+  <footer>
+
+    <p> © Tom Barnicoat </p>
+
+  </footer>
 
 
 </body>
