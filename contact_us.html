@@ -1,19 +1,30 @@
-<html>
+<!DOCTYPE html>
+<html lang="en-GB">
 
+<!-- Head -->
 <head>
+    <meta charset="UTF-8">
     <title>Silly Cats Society</title>
     <link rel='stylesheet' href='css/main.css'>
 </head>
 
 
-
+<!-- Body -->
 <body>
     <header>
+        <!-- Script to send form -->
+        <script>
+            function send_form() {
+                document.getElementById("form_outcome").innerHTML = "Form has been sent successfully!"
+            }
+
+        </script>
         <h1>Silly Cats Society</h1>
     </header>
 
-    <nav>
 
+    <!-- Navigation bar -->
+    <nav>
         <ul>
             <li><a href=index.html>Home</a></li>
             <li><a href=img_gallery.html>Gallery</a></li>
@@ -21,48 +32,51 @@
             <li><a href=event_calendar.html>Events</a></li>
             <li><a href=contact_us.html>Contact Us</a></li>
         </ul>
-
-
     </nav>
 
+    <!-- Main -->
     <main>
-
+        <!-- Contact form -->
         <form>
             <fieldset>
                 <legend>Contact Us using the below form.</legend>
                 <label for="name">Name:</label>
-                <input type="text" name="name" value="" /> <br />
+                <input id="name" type="text" name="name" value=""> <br>
 
                 <label for="email">Email:</label>
-                <input type="email" name="email" value="" /> <br />
+                <input id="email" type="email" name="email" value=""> <br>
 
-                <label for="member_status">Membership Status:</label>
+                <span>Membership Status:</span>
+                <input id="member" type="radio" name="member" value="HTML">
+                <label for="member">Member</label>
 
-                <input type="radio" id="html" name="member" value="HTML">
-                <label for="html">Member</label>
-
-                <input type="radio" id="html" name="nonmember" value="HTML">
-                <label for="html">Non member</label><br>
+                <input id="nonmember" type="radio" name="nonmember" value="HTML">
+                <label for="nonmember">Non member</label><br>
 
                 <label for="comments">Comments:</label>
-                <input type="text" name="comment" value="" /> <br />
+                <input id="comments" type="text" name="comment" value=""> <br>
 
                 <label for="myfile">Attach a file:</label>
-                <input type="file" id="myfile" name="myfile">
+                <input id="myfile" type="file" name="myfile"> <br>
+
+                <button type="button" onclick=send_form()>Submit</button>
 
             </fieldset>
         </form>
-
+        <div>
+            <p id="form_outcome"></p>
+        </div>
     </main>
-
     <aside>
 
 
-       
-              <a class="twitter-timeline" data-height="800" href="https://twitter.com/starwars?ref_src=twsrc%5Etfw">Tweets by starwars</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        <!-- Twitter embed -->
+        <a class="twitter-timeline" data-height="800" href="https://twitter.com/starwars?ref_src=twsrc%5Etfw">Tweets by
+            starwars</a>
+        <script async src="https://platform.twitter.com/widgets.js"></script>
 
-           
-        
+
+
 
     </aside>
 

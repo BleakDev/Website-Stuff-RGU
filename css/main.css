@@ -1,3 +1,4 @@
+/* YouTube Container */
 .youtube-container {
     overflow: hidden;
     width: 100% !important;
@@ -7,6 +8,7 @@
     pointer-events: none;
 } 
 
+/* YouTube Container Iframe*/
 .youtube-container iframe {
     /* Extend it beyond the viewport... */
     width: 300% !important;
@@ -15,16 +17,18 @@
     margin-left: -100%;
 }
 
-
+/* Body Styling */
 body {
     background-color: #808080 !important;
 }
 
+/* Header Styling */
 header {
     background-color: white !important;
     padding: 10px;
 }
 
+/* H1-H6 and P Styling */
 h1,
 h2,
 h3,
@@ -34,13 +38,6 @@ h6,
 p {
     color: black;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
-}
-
-#headerImage {
-    height: 50px;
-    width: 50px;
-    float: left;
-    margin-right: 10px;
 }
 
 h1 {
@@ -57,11 +54,27 @@ p {
     font-size: 10pt;
 }
 
+/* Header Image Styling */
+#headerImage {
+    height: 50px;
+    width: 50px;
+    float: left;
+    margin-right: 10px;
+}
+
+/* Main Styling */
 main {
     background-color: #FFFFFF;
     border-radius: 10px;
 }
 
+main {
+    width: 70%;
+    float: left;
+  }
+
+
+/* Aside Styling */
 aside {
     background-color: #ffffff50 !important;
     border-radius: 10px;
@@ -69,6 +82,7 @@ aside {
     width: 25%;
 }
 
+/* Footer Styling */
 footer {
     background-color: black !important;
     /* border-radius: 10px; */
@@ -76,10 +90,12 @@ footer {
     margin-top: 10px;
 }
 
+/* Footer paragraph styling */
 footer p {
     color: white;
 }
 
+/* Nav list styling */
 nav li {
     border: 2px solid white;
     background-color: #37a572 !important;
@@ -90,6 +106,7 @@ nav li {
     margin-bottom: 10px;
 }
 
+/* Nav list item styling */
 nav li a {
     color: white;
     text-decoration: none;
@@ -99,18 +116,18 @@ Nav li:hover {
     background-color: #000000 !important;
 }
 
+Nav ul {
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+}
+
+
 .active {
     background-color: black !important;
 }
 
 
-main {
-    width: 70%;
-    float: left;
-  }
-
-  
-  
   /* Clear floats after the columns */
   .row:after {
     content: "";
@@ -118,6 +135,7 @@ main {
     clear: both;
   }
 
+/* Table styling */
 table {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     border-collapse: collapse;
@@ -141,12 +159,10 @@ Table th {
     color: white
 }
 
-Nav ul {
-    margin: 0px;
-    padding: 0px;
-    overflow: hidden;
-}
 
+
+
+/* Carousel styling */
 .carouselTagImage {
     width: 200px;
     height: 200px
@@ -156,6 +172,7 @@ Nav ul {
    color: white; 
 }
 
+/* Image gallery blur */
 #wrap:hover img:not(:hover) {
     filter: blur(5px);
 }
