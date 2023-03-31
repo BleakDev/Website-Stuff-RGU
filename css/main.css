@@ -135,6 +135,8 @@ Nav ul {
     clear: both;
   }
 
+
+
 /* Table styling */
 table {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -147,7 +149,7 @@ table th {
 }
 
 Table tr:nth-child(even) {
-    background-color: #F2F2F2 !important;
+    background-color: #F2F2F2 ;
 }
 
 Table tr:hover {
@@ -156,10 +158,17 @@ Table tr:hover {
 
 Table th {
     background-color: #339936 !important;
-    color: white
+    color: white;
+    padding: 2px;
+    text-align: center;
 }
 
+Table td{
+    font-size: 10pt;
+    width: 200px;
+    text-align: center;
 
+}
 
 
 /* Carousel styling */
@@ -175,4 +184,15 @@ Table th {
 /* Image gallery blur */
 #wrap:hover img:not(:hover) {
     filter: blur(5px);
+}
+
+
+/* Index aside styling */
+#asideTag {
+    text-align: left;
+    color: #FFFFFF;
+}
+
+#asideTagImage {
+    float:left;
 }
