@@ -25,6 +25,25 @@ Threat Mitigation: Compare against list of whitelisted links - prevent a change 
   <!-- Favicon -->
     <link rel = "icon" type = "image/x-icon" href="images/sillycatlogo.ico">
 
+
+
+ <!-- Mailing list script -->
+ <script>
+  var hasSent = false;
+  function mailingList() {
+    if (hasSent == false) {
+      hasSent = true
+      alert('You have been added to the mailing list!');
+    }
+    else {
+      alert('You have already sent a request for the mailing list!')
+    }
+    counter += 1;
+  }
+</script>
+
+
+
  
   </head>
 
@@ -65,8 +84,43 @@ Threat Mitigation: Compare against list of whitelisted links - prevent a change 
       <p>Owning a cat can sometimes be quite the task so we've put together some sources for advice on cats.</p>
       <p>Click the image to go to the corresponding website.</p>
         <a href="https://www.cats.org.uk/help-and-advice"><img src="images/catsprotection.png" width="100" height="=100"></a>
-    
+
+        <a class="twitter-timeline" data-width="600" data-height="300" href="https://twitter.com/CatsProtection?ref_src=twsrc%5Etfw">Tweets by CatsProtection</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>     
     </div>
+
+
+
+    <main>
+      <!-- Contact form -->
+      <form>
+          <fieldset>
+              <legend>Add yourself to our mailing list for advice!</legend>
+              <label for="name">Name:</label>
+              <input id="name" type="text" name="name" value=""> <br>
+
+              <label for="email">Email:</label>
+              <input id="email" type="email" name="email" value=""> <br>
+
+              <span>Membership Status:</span>
+              <input id="member" type="radio" name="member" value="HTML">
+              <label for="member">Member</label>
+
+              <input id="nonmember" type="radio" name="nonmember" value="HTML">
+              <label for="nonmember">Non member</label><br>
+
+              <button type="button" onclick=mailingList()>Submit</button>
+
+          </fieldset>
+      </form>
+      <div>
+          <p id="form_outcome"></p>
+      </div>
+  </main>
+
+
+
+
+
   </main>
 
   <!-- Archie information -->
