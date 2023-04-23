@@ -25,7 +25,7 @@ body {
 /* Header Styling */
 header {
     background-color: white !important;
-    padding: 10px;
+    padding: 2%;
 }
 
 /* H1-H6 and P Styling */
@@ -37,7 +37,8 @@ h5,
 h6,
 p {
     color: black;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 15pt !important; 
 }
 
 h1 {
@@ -47,7 +48,7 @@ h1 {
 }
 
 h3 {
-    font-size: 20pt;
+    font-size: 20pt !important;
 }
 
 p {
@@ -101,7 +102,7 @@ nav li {
     background-color: #37a572 !important;
     list-style-type: none;
     float: left;
-    width: 5%;
+    width: 10%;
     padding: 16px;
     margin-bottom: 10px;
     font-family: Arial, Helvetica, sans-serif;

@@ -26,6 +26,9 @@ Threat Mitigation: 2FA in place before video can be changed, email updates to sy
     <link rel = "icon" type = "image/x-icon" href="images/sillycatlogo.ico">
 
   
+
+
+    
   </head>
 
 
@@ -33,7 +36,22 @@ Threat Mitigation: 2FA in place before video can be changed, email updates to sy
 <body>
   <header>
 
-   
+  <!-- Suggestion form script -->
+ <script>
+  var hasSent = false;
+  function formSend() {
+    if (hasSent == false) {
+      hasSent = true
+      alert('Form has been sent!');
+    }
+    else {
+      alert('Form has been sent already!')
+    }
+    counter += 1;
+  }
+</script>
+
+  </script>
 
     <!-- Logo image and webpage title -->
     <h1>Silly Cats Society</h1>
@@ -68,6 +86,40 @@ Threat Mitigation: 2FA in place before video can be changed, email updates to sy
         <iframe width="560" height="315" src="https://www.youtube.com/embed/qwxZU0VkWII?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>     
         <iframe width="560" height="315" src="https://www.youtube.com/embed/ViOS7SeT0HE?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </div>
+
+
+
+
+           <!-- Suggestion form -->
+           <form>
+            <fieldset>
+                <legend>Got a video you want to display? Use the form below!</legend>
+                <label for="name">Name:</label>
+                <input id="name" type="text" name="name" value=""> <br>
+
+                <label for="email">Email:</label>
+                <input id="email" type="email" name="email" value=""> <br>
+
+                <span>Membership Status:</span>
+                <input id="member" type="radio" name="member" value="HTML">
+                <label for="member">Member</label>
+
+                <input id="nonmember" type="radio" name="member" value="HTML">
+                <label for="nonmember">Non member</label><br>
+
+                <label for="link">Link (if applicable):</label>
+                <input id="link" type="text" name="link" value=""> <br>
+
+                <label for="myfile">Attach a file:</label>
+                <input id="myfile" type="file" name="myfile"> <br>
+
+                <button type="button" onclick=formSend()>Submit</button>
+
+            </fieldset>
+        </form>
+        <div>
+            <p id="form_outcome"></p>
+        </div>
   </main>
 
   <aside></aside>

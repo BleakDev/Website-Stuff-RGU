@@ -24,10 +24,14 @@ Threat Mitigation: Compare against list of whitelisted links - prevent a change 
 
   <!-- Favicon -->
     <link rel = "icon" type = "image/x-icon" href="images/sillycatlogo.ico">
+  </head>
 
 
+<!-- Body -->
+<body>
+  <header>
 
- <!-- Mailing list script -->
+    <!-- Mailing list script -->
  <script>
   var hasSent = false;
   function mailingList() {
@@ -41,17 +45,6 @@ Threat Mitigation: Compare against list of whitelisted links - prevent a change 
     counter += 1;
   }
 </script>
-
-
-
- 
-  </head>
-
-
-<!-- Body -->
-<body>
-  <header>
-
 
     <!-- Logo image and webpage title -->
     <h1>Silly Cats Society</h1>
@@ -105,7 +98,7 @@ Threat Mitigation: Compare against list of whitelisted links - prevent a change 
               <input id="member" type="radio" name="member" value="HTML">
               <label for="member">Member</label>
 
-              <input id="nonmember" type="radio" name="nonmember" value="HTML">
+              <input id="nonmember" type="radio" name="member" value="HTML">
               <label for="nonmember">Non member</label><br>
 
               <button type="button" onclick=mailingList()>Submit</button>
