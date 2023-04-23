@@ -201,12 +201,12 @@ Table td{
 
 
 /* Index aside styling */
-#asideTag {
+.asideTag {
     text-align: left;
     color: #FFFFFF;
 }
 
-#asideTagImage {
+.asideTagImage {
     float:left;
 }
 
